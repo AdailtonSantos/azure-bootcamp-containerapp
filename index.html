@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link id="dark-theme" rel="stylesheet" href="/assets/darkmode.css">
+    <title>Dev Soluciona Assessoria</title>
+</head>
+
+<body>
+    <header role="banner" class="principal-header">
+        <button id="hamburger-menu" aria-labelledby="Abrir menu mobile" class="hamburger-menu"><i class="bi bi-list"></i></button>
+        <section class="contact-info-bar">
+            <p>ATENDER >> ENTENDER >> RESOLVER</p>
+            <a class="button" href="#contato">SOLICITE UM ORÇAMENTO</a>
+            <nav role="navigation" aria-labelledby="Menu redes sociais">
+                <i class="bi bi-telephone-fill"> (11) 2026-1819</i>
+                <a href="https://www.youtube.com/@SolucionaTecnologia" target="_blank"><i class="bi bi-youtube"></i>
+                    Youtube</a>
+                <a href="https://www.linkedin.com/company/soluciona-assessoria" target="_blank"><i
+                        class="bi bi-linkedin"></i> Linkedin</a>
+            </nav>
+        </section>
+        <section id="menu" class="menu">
+            <img src="/assets/images/logo_name.png" alt="logo-nome-soluciona">
+            <nav class="principal-menu" role="navigation">
+                <a class="menuItem" href="/">HOME</a>
+                <a class="menuItem" href="#sobrenos">SOBRE NÓS</a>
+                <a class="menuItem" href="#services">SERVIÇOS</a>
+                <a class="menuItem" href="#casos">CASOS</a>
+                <a class="menuItem" href="#contato">CONTATO</a>
+            </nav>
+            <div>
+            <a class="faleconosco-button" href="#contato">FALE CONOSCO</a>
+            <button class="change-theme"><i class="bi bi-highlights"></i> Tema</button>
+        </div>
+        </section>
+    </header>
+    <main role="main">
+
+        <!-- Vlibras -->
+        <div vw class="enabled">
+            <div vw-access-button class="active vlibras-button" tabindex="0" id="vlibras"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+            const vlibras = document.getElementById('vlibras');
+            vlibras.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Previne comportamento padrão
+                    vlibras.click(); // Simula o clique
+                }
+            });
+        </script>
+
+        <section id="home" class="hero-section">
+            <p class="theme-preference-message">Tema carregado de acordo com as preferências do navegador. Para alternar entre tema escuro e claro, utilize o botão de ação no cabeçalho</p>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <p class="hero-tag-text">Software sob medida para o seu negócio</p>
+                    </div>
+                    <h1 class="hero-title">Transformando ideias em <span class="hero-title-highlight">soluções
+                            digitais</span> poderosas</h1>
+                    <p class="hero-description">Especialistas em desenvolver sistemas personalizados, CRMs, ERPs e
+                        integrações que impulsionam a eficiência e o crescimento do seu negócio.</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="button button-primary hero-button">Conheça nossos serviços</a>
+                        <a href="#contato" class="button button-secondary hero-button">Fale com um especialista</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-main">
+                            <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=2070&q=80"
+                                alt="Software Development" class="hero-image" loading="lazy" />
+                        </div>
+                        <div class="hero-floating-card hero-floating-card-1">
+                            <div class="hero-floating-card-content">
+                                <div class="hero-floating-card-icon">✔</div>
+                                <div class="hero-floating-card-text">100% customizado</div>
+                            </div>
+                        </div>
+                        <div class="hero-floating-card hero-floating-card-2">
+                            <div class="hero-floating-card-content">
+                                <div class="hero-floating-card-icon">ℹ</div>
+                                <div class="hero-floating-card-text">Suporte técnico</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nossos Serviços</span>
+                    <h2 class="section-title">Soluções digitais completas</h2>
+                    <p class="section-description">
+                        Oferecemos uma gama de serviços de tecnologia e design para ajudar sua empresa a alcançar seus
+                        objetivos digitais.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                                alt="Sistemas Sob Demanda" class="service-icon-img">
+                        </div>
+                        <h3 class="service-title">Sistemas Sob Demanda</h3>
+                        <p class="service-description">
+                            Desenvolvimento de sistemas personalizados que atendem exatamente às necessidades
+                            específicas do seu negócio, com interfaces intuitivas e alta performance.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3930/3930282.png" alt="CRM Personalizado"
+                                class="service-icon-img">
+                        </div>
+                        <h3 class="service-title">CRM Personalizado</h3>
+                        <p class="service-description">
+                            Soluções de CRM adaptadas ao seu fluxo de trabalho, ajudando a gerenciar relacionamentos com
+                            clientes e potencializando suas vendas.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5579/5579145.png" alt="ERP Integrado"
+                                class="service-icon-img">
+                        </div>
+                        <h3 class="service-title">ERP Integrado</h3>
+                        <p class="service-description">
+                            Sistemas ERP que integram todos os processos essenciais do seu negócio em uma única
+                            plataforma, aumentando a eficiência operacional.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1087/1087927.png" alt="Integrações & API's"
+                                class="service-icon-img">
+                        </div>
+                        <h3 class="service-title">Integrações & API's</h3>
+                        <p class="service-description">
+                            Conectamos seus sistemas existentes e novas soluções através de API's robustas e integrações
+                            personalizadas, eliminando silos de informação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobrenos" class="about-section">
+            <!-- Design Elements -->
+            <div class="design-element"></div>
+
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-header">
+                            <div class="badge">
+                                <p>Nossa expertise</p>
+                            </div>
+
+                            <h2>
+                                Combinamos <span>tecnologia</span> e estratégia para resultados excepcionais
+                            </h2>
+
+                            <p class="about-description">
+                                Com uma equipe multidisciplinar de especialistas em tecnologia, entregamos soluções que
+                                verdadeiramente transformam negócios. Nossa abordagem combina profundo conhecimento
+                                técnico com entendimento dos desafios de negócios.
+                            </p>
+                        </div>
+
+                        <div class="tech-section">
+                            <h3>
+                                Nossas tecnologias
+                            </h3><br>
+
+                            <div class="tech-tags">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">VueJS</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">NoSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-images">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=2070&q=80"
+                                alt="Modern workspace" loading="lazy" />
+                        </div>
+
+                        <div class="floating-image">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80"
+                                alt="Team collaboration" loading="lazy" />
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-box-header">
+                                <div class="info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 12H18L15 21L9 3L6 12H2" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h4>Crescimento sustentável</h4>
+                            </div>
+                            <p>
+                                Nossos clientes reportam, em média, um aumento de produtividade de 35% após
+                                implementação de nossas soluções.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Details Section -->
+                <div class="company-details">
+                    <h3>Sobre a <span>Soluciona Assessoria</span></h3>
+
+                    <div class="company-description">
+                        <p>
+                            A Soluciona Assessoria é uma empresa especializada no desenvolvimento de soluções sob
+                            demanda, oferecendo uma abordagem personalizada para atender às necessidades específicas de
+                            seus clientes. Com uma equipe de profissionais altamente qualificados, a Soluciona
+                            Assessoria é reconhecida por sua excelência no desenvolvimento de sistemas sob demanda, que
+                            são criados de acordo com as particularidades de cada negócio, garantindo a entrega de
+                            soluções que realmente atendem às necessidades operacionais e estratégicas de seus clientes.
+                        </p>
+                        <p>
+                            Além disso, a empresa se destaca na área de integrações de sistemas, conectando diferentes
+                            plataformas e otimizando fluxos de dados entre diversas ferramentas corporativas. Isso
+                            permite que as empresas integrem seus sistemas internos de maneira eficiente, garantindo que
+                            as informações estejam sempre atualizadas e acessíveis de forma rápida e segura. As
+                            integrações são realizadas com foco na melhoria de processos, tornando as operações mais
+                            ágeis e menos propensas a erros manuais.
+                        </p>
+                        <p>
+                            A Soluciona Assessoria também oferece expertise em CRM (Customer Relationship Management),
+                            proporcionando aos seus clientes soluções que ajudam a gerenciar de forma eficiente o
+                            relacionamento com seus consumidores. Com um CRM bem implementado, as empresas conseguem
+                            centralizar informações sobre clientes, melhorar o atendimento, personalizar ações de
+                            marketing e vendas, além de proporcionar uma experiência mais satisfatória e personalizada
+                            ao cliente.
+                        </p>
+                        <p>
+                            No campo dos ERPs (Enterprise Resource Planning), a Soluciona Assessoria desenvolve sistemas
+                            integrados de gestão empresarial que permitem às empresas gerenciar de forma eficaz suas
+                            finanças, estoque, compras, vendas, produção e outros processos essenciais. Com a
+                            implementação de ERPs sob medida, as empresas conseguem centralizar dados e informações,
+                            melhorar a comunicação interna e tomar decisões mais rápidas e assertivas.
+                        </p>
+                        <p>
+                            Com uma abordagem inovadora e centrada nas necessidades do cliente, a Soluciona Assessoria é
+                            a parceira ideal para empresas que buscam soluções tecnológicas de ponta, garantindo
+                            eficiência, escalabilidade e resultados tangíveis para seus negócios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="casos" class="testimonials section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Casos de Sucesso</span>
+                    <h2 class="section-title">Veja os desafios que já enfrentamos</h2>
+                </div>
+
+                <div class="testimonials-slider">
+                    <div class="testimonials-container" style="transform: translateX(-0%);">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    A cliente entrou em contato com a necessidade de gerir as etapas dos leilões,
+                                    atribuindo responsabilidades de processos específicos para os usuários, visualizando
+                                    as tarefas em agenda e gerindo o fluxo por e-mail. Viajamos para Campinas para uma
+                                    reunião de levantamento de requisitos com a cliente e partimos para o
+                                    desenvolvimento. O sistema hoje possui 8 usuários ativos e atendemos às necessidades
+                                    adicionais da cliente quando necessário.
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="/assets/images/logo-picelli.png" alt="Picelli Leilões"
+                                        class="testimonial-author-image">
+                                    <div class="testimonial-author-info">
+                                        <h4 class="testimonial-author-name">Picelli Leilões</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    O cliente solicitou a reformulação do sistema de processos judiciais. O sistema
+                                    antigo, desenvolvido com uma ferramenta de 2003 da Microsoft, já não atendia mais às
+                                    necessidades, tornando a inserção de novos processos lenta e desatualizada. Além
+                                    disso, o layout do site estava ultrapassado, e os acessos dos usuários estavam
+                                    desorganizados, exigindo uma reformulação completa. O cliente então nos procurou
+                                    para analisar o sistema existente e refazê-lo do zero. Partimos para o
+                                    desenvolvimento, mantendo os textos e o padrão de cores do site, mas reconstruindo
+                                    todo o fluxo de inserção de processos, cadastro e permissões de usuários. O
+                                    resultado foi um sistema mais estável, com melhor desempenho e uma experiência muito
+                                    mais eficiente.
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="/assets/images/logo-projuris.png" alt="Projuris"
+                                        class="testimonial-author-image">
+                                    <div class="testimonial-author-info">
+                                        <h4 class="testimonial-author-name">Projuris</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    O cliente de forros de drywall necessitava de um pequeno fluxo de carrinho e pedidos
+                                    no site, simulando uma loja virtual, mas com a realização de orçamentos via
+                                    WhatsApp. Iniciamos o desenvolvimento do site a partir do site antigo que já
+                                    havíamos desenvoivido e adicionamos a listagem dos produtos, com descrição,
+                                    possibilidade de escolher variações e quantidades, além da opção de adicionar
+                                    multíplos itens ao carrinho e criar uma lista automaticamente dos produtos para a
+                                    realização do orçamento, tudo com um único clique. O sistema proporcionou uma maior
+                                    agilidade para os clientes solicitarem os seus produtos e orçamentos,
+                                    consequentemente aumentando a conversão e vendas da Cedray.
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="/assets/images/logo-cedray.png" alt="Cedray"
+                                        class="testimonial-author-image">
+                                    <div class="testimonial-author-info">
+                                        <h4 class="testimonial-author-name">Cedray</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    A Pioneira já está conosco há alguns anos e no mês passado surgiu a necessidade de
+                                    uma maneira mais ágil e prática de gerenciar os fechamentos mensais. Viajamos até
+                                    Igaratá e realizamos uma reunião para entender o fluxo que era realizado e como o
+                                    sistema poderia atendê-los. Foi então que chegamos na concepção do projeto, com
+                                    colunas no estilo kanban informando as etapas de cobrança dos clientes, integração
+                                    com o banco de dados que a loja utiliza para armazenar os produtos e uma régua de
+                                    cobrança para gerenciar os prazos e atrasos de pagamento. Hoje o sistema está no ar,
+                                    com deploy em Docker e totalmente gerenciado por nós.
+                                </p>
+                                <div class="testimonial-author">
+                                    <img src="/assets/images/logo-pioneira.png" alt="Pioneira"
+                                        class="testimonial-author-image">
+                                    <div class="testimonial-author-info">
+                                        <h4 class="testimonial-author-name">Pioneira</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-controls">
+                        <button class="testimonial-control prev" onclick="prevSlide()" disabled="false">
+                            &#8592;
+                        </button>
+                        <div class="testimonial-dots">
+                            <button class="testimonial-dot active" onclick="goToSlide(0)"></button>
+                            <button class="testimonial-dot" onclick="goToSlide(1)"></button>
+                            <button class="testimonial-dot" onclick="goToSlide(2)"></button>
+                            <button class="testimonial-dot" onclick="goToSlide(3)"></button>
+                        </div>
+                        <button class="testimonial-control next" onclick="nextSlide()" disabled="false">
+                            &#8594;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contact section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <span class="section-subtitle">Contato</span>
+                        <h2 class="section-title">Vamos conversar sobre seu projeto</h2>
+                        <p class="contact-description">
+                            Estamos prontos para transformar sua ideia em realidade. Entre em contato para discutirmos
+                            como
+                            podemos ajudar sua empresa a crescer digitalmente.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/1865/1865269.png" alt="Location"
+                                        class="contact-icon-img">
+                                </div>
+                                <div class="contact-method-content">
+                                    <h3 class="contact-method-title">Localização</h3>
+                                    <p class="contact-method-text">Av. Aricanduva, 8256, Torre 9, Sala 1, São Paulo - SP
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"
+                                        class="contact-icon-img">
+                                </div>
+                                <div class="contact-method-content">
+                                    <h3 class="contact-method-title">Email</h3>
+                                    <p class="contact-method-text">contato@soluciona.inf.br</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3059/3059954.png" alt="Phone"
+                                        class="contact-icon-img">
+                                </div>
+                                <div class="contact-method-content">
+                                    <h3 class="contact-method-title">Telefone</h3>
+                                    <p class="contact-method-text">(11) 2026-1819</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/company/soluciona-assessoria" class="social-link"
+                                target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"
+                                    class="social-icon">
+                            </a>
+                            <a href="https://www.youtube.com/@SolucionaTecnologia" class="social-link" target="_blank">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="Twitter"
+                                    class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" id="name" class="form-input" placeholder="Seu nome completo"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="seu.email@exemplo.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefone / Celular</label>
+                                <input type="text" id="phone" class="form-input"
+                                    placeholder="Opcional para contato via WhatsApp">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea id="message" class="form-textarea"
+                                    placeholder="Envie a sua necessidade para agendarmos uma conversa" rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button id="submit-button" type="submit" class="submit-button">Enviar Mensagem</button>
+
+                            <div id="infoMessage" class="form-response" style="display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-text-dark">Soluciona&nbsp;</span>
+                        <span class="logo-text-highlight">Assessoria</span>
+                    </a>
+                    <p class="footer-description">
+                        Soluções digitais inovadoras para transformar seu negócio e conectar com seu público.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Empresa</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="#sobrenos">Sobre nós</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#casos">Casos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">Serviços</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="#services">Sistemas Sob Demanda</a></li>
+                            <li><a href="#services">CRM Personalizado</a></li>
+                            <li><a href="#services">ERP Integrado</a></li>
+                            <li><a href="#services">Integrações & API's</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"
+                            class="footer-social-icon">
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="Twitter"
+                            class="footer-social-icon">
+                    </a>
+                </div>
+
+                <div id="footer-copyright" class="footer-copyright"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>

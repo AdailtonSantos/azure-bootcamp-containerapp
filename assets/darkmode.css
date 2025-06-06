@@ -1,0 +1,108 @@
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    .services,
+    #contato,
+    .hero-section {
+        background-color: var(--gray-900);
+    }
+
+    .service-card {
+        background-color: var(--gray-800);
+    }
+
+    .service-icon {
+        background-color: var(--gray-700);
+    }
+
+    .section-description,
+    .service-description,
+    .service-title,
+    .section-title,
+    .testimonial-author-name,
+    .contact-description,
+    .contact-method-title,
+    .contact-method-text,
+    .hero-title,
+    .hero-description,
+    .hero-button {
+        color: white;
+    }
+
+    .testimonial-author-image {
+        background-color: white;
+    }
+
+    .testimonials {
+        background-color: var(--gray-900);
+    }
+
+    .section-description {
+        color: var(--gray-400);
+    }
+
+    .testimonial-card {
+        background-color: var(--gray-800);
+    }
+
+    .testimonial-text {
+        color: var(--gray-300);
+    }
+
+    .testimonial-author-title {
+        color: var(--gray-400);
+    }
+
+    .testimonial-control {
+        color: var(--text-light);
+    }
+
+    .testimonial-dot {
+        background-color: var(--gray-600);
+    }
+
+    .about-section {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    .badge {
+        background-color: rgba(231, 205, 86, 0.2);
+        border-color: rgba(231, 205, 86, 0.4);
+    }
+
+    .badge p {
+        color: #e7cd56;
+    }
+
+    .tech-tag {
+        background-color: var(--gray-800);
+        color: var(--gray-200);
+    }
+
+    .about-description {
+        color: var(--gray-300);
+    }
+
+    .company-description p {
+        color: var(--gray-300);
+    }
+
+    .company-details {
+        background-color: var(--gray-900);
+        border-color: var(--gray-800);
+    }
+
+    .info-box p {
+        color: var(--gray-300);
+    }
+
+    .info-box {
+        background-color: var(--gray-900);
+    }
+
+    .floating-image {
+        border-color: var(--gray-900);
+    }
+
+}
